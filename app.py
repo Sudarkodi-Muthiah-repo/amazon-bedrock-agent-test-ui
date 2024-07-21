@@ -8,7 +8,7 @@ import uuid
 agent_id = os.environ.get("BEDROCK_AGENT_ID")
 agent_alias_id = os.environ.get("BEDROCK_AGENT_ALIAS_ID", "TSTALIASID") # TSTALIASID is the default test alias ID
 ui_title = os.environ.get("BEDROCK_AGENT_TEST_UI_TITLE", "Agents for Amazon Bedrock Test UI")
-ui_icon = os.environ.get("BEDROCK_AGENT_TEST_UI_ICON")
+ui_icon = ":favicon-logo.png" #os.environ.get("BEDROCK_AGENT_TEST_UI_ICON")
 
 def init_state():
     st.session_state.session_id = str(uuid.uuid4())
