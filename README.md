@@ -29,8 +29,8 @@ A generic Streamlit UI for testing generative AI agents built using Agents for A
    - `BEDROCK_AGENT_ALIAS_ID` - The ID of the agent alias. The default `TSTALIASID` will be used if it is not set.
    - The [AWS environment variables](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html) that provides the credentials to your account. The principal must have the necessary permissions to invoke the Bedrock agent.
 ```
-SET BEDROCK_AGENT_ID=WENOOVMMEK
-SET BEDROCK_AGENT_TEST_UI_TITLE="InvestRock - Mutual Fund AI assistant\n Welcome to InvestRock! Would you like to explore our list of mutual funds, or do you have specific investment goals in mind for creating a diversified portfolio? I am a helpful chat assistant. How can I help you?"
+SET BEDROCK_AGENT_ID=<your agent id from AWS>
+SET BEDROCK_AGENT_TEST_UI_TITLE="InvestRock - Mutual Fund AI assistant\n"
 ```
 5. (Optional) Set the following environment variables to customize the UI:
    - `BEDROCK_AGENT_TEST_UI_TITLE` - The page title. The default `Agents for Amazon Bedrock Test UI` will be used if not set.
