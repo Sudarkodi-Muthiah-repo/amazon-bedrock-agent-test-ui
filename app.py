@@ -5,9 +5,9 @@ import streamlit as st
 import uuid
 
 # Get config from environment variables
-agent_id = os.environ.get("BEDROCK_AGENT_ID")
-agent_alias_id = os.environ.get("BEDROCK_AGENT_ALIAS_ID", "TSTALIASID") # TSTALIASID is the default test alias ID
-ui_title = "InvestRock - Mututal Fund AI assistant\n Welcome to InvestRock! Would you like to explore our list of mutual funds, or do you have specific investment goals in mind for creating a diversified portfolio? I am a helpful chat assistant. How can I help you? "#os.environ.get("BEDROCK_AGENT_TEST_UI_TITLE", "Agents for Amazon Bedrock Test UI")
+agent_id = "LYDKIM8W2B" #os.environ.get("BEDROCK_AGENT_ID")
+agent_alias_id = "SJFWKM5FJR"#os.environ.get("BEDROCK_AGENT_ALIAS_ID", "TSTALIASID") # TSTALIASID is the default test alias ID
+ui_title = "🚀InvestRock - Mutual Fund AI assistant🤖\n" #os.environ.get("BEDROCK_AGENT_TEST_UI_TITLE", "Agents for Amazon Bedrock Test UI")
 ui_icon = ":favicon-logo.png" #os.environ.get("BEDROCK_AGENT_TEST_UI_ICON") 
 
 def init_state():
@@ -19,6 +19,7 @@ def init_state():
 # General page configuration and initialization
 st.set_page_config(page_title=ui_title, page_icon=ui_icon, layout="wide")
 st.title(ui_title)
+st.subheader("Welcome to InvestRock!👩‍💻 Would you like to explore our list of mutual funds, or do you have specific investment💵💸 goals in mind for creating a diversified portfolio? I am a helpful chat assistant. How can I help you?")
 if len(st.session_state.items()) == 0:
     init_state()
 
