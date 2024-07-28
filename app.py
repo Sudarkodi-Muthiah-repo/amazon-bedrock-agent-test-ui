@@ -5,8 +5,8 @@ import streamlit as st
 import uuid
 
 # Get config from environment variables
-agent_id = "LYDKIM8W2B" #os.environ.get("BEDROCK_AGENT_ID")
-agent_alias_id = "SJFWKM5FJR"#os.environ.get("BEDROCK_AGENT_ALIAS_ID", "TSTALIASID") # TSTALIASID is the default test alias ID
+agent_id = os.environ.get("BEDROCK_AGENT_ID")
+agent_alias_id = os.environ.get("BEDROCK_AGENT_ALIAS_ID", "TSTALIASID") # TSTALIASID is the default test alias ID
 ui_title = "🚀InvestRock - Mutual Fund AI assistant🤖\n" #os.environ.get("BEDROCK_AGENT_TEST_UI_TITLE", "Agents for Amazon Bedrock Test UI")
 ui_icon = ":favicon-logo.png" #os.environ.get("BEDROCK_AGENT_TEST_UI_ICON") 
 
